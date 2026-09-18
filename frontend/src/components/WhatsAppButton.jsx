@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 export const WhatsAppButton = () => {
   const handleClick = () => {
     const message = encodeURIComponent('Olá! Vim pelo site e gostaria de conhecer mais sobre os serviços da VPA Tech.');
-    window.open(`https://wa.me/5511952684250?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511996046338?text=${message}`, '_blank');
   };
 
   return (

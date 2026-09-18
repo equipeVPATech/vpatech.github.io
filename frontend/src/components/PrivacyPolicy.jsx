@@ -83,8 +83,8 @@ export const PrivacyPolicy = () => {
             <h2 className="text-2xl font-bold text-[#13295f] mb-4">6. Contato</h2>
             <p className="leading-relaxed">
               Para exercer seus direitos ou tirar dúvidas sobre nossa política de privacidade, 
-              entre em contato através do e-mail: <strong>contato@vpatech.com.br</strong> ou 
-              telefone: <strong>(11) 95268-4250</strong>.
+              entre em contato através do e-mail: <strong>vpatech.br@gmail.com</strong> ou 
+              telefone: <strong>(11) 99604-6338</strong>.
             </p>
           </section>
 
@@ -97,7 +97,7 @@ export const PrivacyPolicy = () => {
           </section>
 
           <div className="pt-6 border-t border-gray-200 text-sm text-gray-500">
-            <p>Última atualização: Dezembro de 2025</p>
+            <p>Última atualização: Setembro de 2026</p>
           </div>
         </div>
       </div>

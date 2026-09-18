@@ -6,12 +6,14 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Services } from "./components/Services";
-import { Plans } from "./components/Plans";
-import { Testimonials } from "./components/Testimonials";
+import { Projects } from "./components/Projects";
+import { Process } from "./components/Process";
+import { Differentials } from "./components/Differentials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { LanguageProvider } from "./LanguageContext";
 
 const HomePage = () => {
   return (
@@ -19,9 +21,10 @@ const HomePage = () => {
       <Header />
       <Hero />
       <About />
+      <Projects />
       <Services />
-      <Plans />
-      <Testimonials />
+      <Process />
+      <Differentials />
       <Contact />
       <Footer />
       <WhatsAppButton />
@@ -31,6 +34,7 @@ const HomePage = () => {
 
 function App() {
   return (
+    <LanguageProvider>
     <div className="App">
       <BrowserRouter>
         <Routes>
@@ -40,6 +44,7 @@ function App() {
       </BrowserRouter>
       <Toaster position="top-right" />
     </div>
+    </LanguageProvider>
   );
 }
 

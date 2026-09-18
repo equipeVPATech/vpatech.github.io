@@ -4,8 +4,8 @@ export const companyInfo = {
   name: "VPA Tech",
   tagline: "Tecnologia aplicada aos negócios",
   description: "Tecnologia aplicada aos negócios com pacotes práticos de presença digital e suporte técnico para empresas. Atendimento em Jundiaí e projetos para todo o Brasil.",
-  phone: "(11) 95268-4250",
-  email: "contato@vpatech.com.br",
+  phone: "(11) 99604-6338",
+  email: "vpatech.br@gmail.com",
   website: "vpatech.com.br",
   address: {
     street: "Av. 9 de Julho, 3575 - Sala 1407, 14º andar",
