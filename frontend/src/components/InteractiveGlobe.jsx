@@ -74,7 +74,7 @@ export const InteractiveGlobe = () => {
   const stop=()=>{drag.current=null};
 
   return <div className="vpa-globe-wrap">
-    <div className="vpa-globe-stage" onPointerDown={start} onPointerMove={move} onPointerUp={stop} onPointerCancel={stop} aria-label="Globo terrestre interativo. Arraste para girar; o Brasil está destacado em verde.">
+    <div className="vpa-globe-stage" role="img" tabIndex="0" onPointerDown={start} onPointerMove={move} onPointerUp={stop} onPointerCancel={stop} aria-label="Globo terrestre interativo. Arraste para girar; o Brasil está destacado em verde.">
       <canvas ref={canvasRef}/>
     </div>
     <div className="vpa-globe-hint"><span>↔</span><strong>Gire o globo</strong><small>arraste para explorar</small></div>

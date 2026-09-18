@@ -19,13 +19,15 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Services />
-      <Process />
-      <Differentials />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Projects />
+        <Services />
+        <Process />
+        <Differentials />
+        <Contact />
+      </main>
       <Footer />
       <WhatsAppButton />
     </>
