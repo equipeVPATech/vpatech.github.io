@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer className="vpa-footer">
       <div className="vpa-footer-main">
         <div className="vpa-footer-brand">
-          <img src="/VPATech-Logo-New.png" alt="VPA Tech" />
+          <img src="/vpa-logo-footer-256.webp" alt="VPA Tech" width="256" height="256" loading="lazy" decoding="async" />
           <p>Presença digital construída para transformar buscas e visitas em oportunidades de negócio.</p>
         </div>
 

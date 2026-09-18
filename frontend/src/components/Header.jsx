@@ -47,7 +47,7 @@ export const Header = () => {
       <div className={`vpa-nav-shell mx-auto max-w-[1360px] ${isScrolled || isMobileMenuOpen ? 'vpa-nav-shell--active' : ''}`}>
         <div className="flex h-[62px] items-center px-4 sm:px-5">
           <button onClick={() => scrollToSection('hero')} aria-label="Ir para o início" className="flex min-w-[130px] items-center">
-            <img src={isDark ? '/VPATech-Logo-2025.png' : '/VPATech-Logo-FundoBranco-2025.png'} alt="VPA Tech" className="h-8 w-auto sm:h-9" />
+            <img src={isDark ? '/vpa-logo-dark-96.webp' : '/vpa-logo-light-96.webp'} alt="VPA Tech" width="96" height="96" fetchPriority="high" decoding="async" className="h-8 w-auto sm:h-9" />
           </button>
 
           <nav className="mx-auto hidden items-center gap-8 lg:flex" aria-label="Navegação principal">

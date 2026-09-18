@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
@@ -12,27 +12,23 @@ import { Differentials } from "./components/Differentials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
-import { PrivacyPolicy } from "./components/PrivacyPolicy";
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy").then((module) => ({ default: module.PrivacyPolicy })));
 import { LanguageProvider } from "./LanguageContext";
 
 const HomePage = () => {
   return (
     <>
-  <Header />
-
-  <main id="main-content">
-    <Hero />
-    <About />
-    <Projects />
-    <Services />
-    <Process />
-    <Differentials />
-    <Contact />
-  </main>
-
-  <Footer />
-  <WhatsAppButton />
-</>
+      <Header />
+      <Hero />
+      <About />
+      <Projects />
+      <Services />
+      <Process />
+      <Differentials />
+      <Contact />
+      <Footer />
+      <WhatsAppButton />
+    </>
   );
 };
 
@@ -43,7 +39,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/politica-privacidade" element={<Suspense fallback={null}><PrivacyPolicy /></Suspense>} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
