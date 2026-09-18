@@ -18,17 +18,21 @@ import { LanguageProvider } from "./LanguageContext";
 const HomePage = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Services />
-      <Process />
-      <Differentials />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
-    </>
+  <Header />
+
+  <main id="main-content">
+    <Hero />
+    <About />
+    <Projects />
+    <Services />
+    <Process />
+    <Differentials />
+    <Contact />
+  </main>
+
+  <Footer />
+  <WhatsAppButton />
+</>
   );
 };
 
