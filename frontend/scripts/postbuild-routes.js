@@ -12,11 +12,9 @@ if (!fs.existsSync(source)) {
 
 let html = fs.readFileSync(source, 'utf8');
 
-// The project uses homepage=".". A copy one directory deeper needs asset URLs
-// rebased to the build root so GitHub Pages can serve the React bundle directly.
-html = html
-  .replace(/(["'])\.\/static\//g, '$1../static/')
-  .replace(/(["'])\.\/(favicon(?:-[^"']+)?\.(?:ico|png)|vpa-logo-[^"']+\.webp)/g, '$1../$2');
+// package.json uses homepage="/" so the production bundle and lazy-loaded
+// chunks always resolve from the site root. This is required for direct
+// navigation to nested GitHub Pages routes such as /politica-privacidade/.
 
 // Route-specific SEO metadata. This page is a real indexable URL, not a SPA 404 fallback.
 html = html
